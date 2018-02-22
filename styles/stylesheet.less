@@ -1,0 +1,64 @@
+// out: ../styles/stylesheet.css, sourcemap: true, compress: true
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/pink_rice.png);
+  font-family: "Lato", sans-serif;
+}
+
+.main {
+  background: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-image: url(../images/crossword.png);
+}
+.banner {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.nav {
+  display: flex;
+  div {
+    flex-basis: 33.3%;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.25em;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 3s;
+    background-color: rgba(237,219,219,0.3);
+    &:hover {
+      transition-property: background-color;
+      transition-duration: 3s;
+      background-color: rgba(237,219,219,0.8);
+    }
+  }
+}
+.columns {
+  display: flex;
+  h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: -5px;
+      left: 50%;
+      margin-left: -70px;
+      display: block;
+      width: 140px;
+      height: 1px;
+      background-color: #696969;
+    }
+  }
+  div {
+    margin: 20px;
+    text-align: justify;
+    color: #696969;
+  }
+}
